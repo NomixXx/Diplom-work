@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Конструктив</title>
+  <style>
+  .kat
+  {
+  font-size: 20px;
+  border-style: 1px solid #000000;
+  border-width: 2px;
+  border-height: 30px; 
+  background-color: #66CCCC;
+  transform: translate(1em, 80em);
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(620px, 1fr));
+  grid-gap: 25px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #66cccc;
+  box-shadow: 0 0 5px gray;
+  width: auto;
+  height: auto;
+}
+
+.product-item img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-item h2 {
+  margin-top: 0;
+}
+
+.product-item p {
+  margin: 0;
+}
+
+.product-item button {
+  margin-top: auto;
+}
+.im 
+{
+max-width: 300px;
+transform: translate(100%);
+}
+
+.im2 
+{
+max-width: 300px;
+transform: translate(90%);
+
+}
+.im3 
+{
+max-width: 150px;
+transform: translate(230%);
+
+}
+  </style>
+</head>
+<body style="background-color: #006666;">
+
+  <div>
+    <h1 style="text-align: center;font-size: 35px; color: #ccffff;"> Грунтовка </h1>
+  </div>
+    <div>
+      <button class="kat" id="button" onclick="document.location='new.html'">Назад</button>
+    </div>
+      <div class="product-grid">
+  <div class="product-item">
+    <img class="im2 " src="img/36.jpg">
+    <h2 style="text-align: center;;">Клей вместо гвоздей POINT 96 кристально-прозрачный 280мл</h2>
+    <p style="text-align: center;">566 руб./шт</p>
+  </div>
+  <div class="product-item">
+    <img  style="width: 120px; transform: translate(290%);" class="im2 " src="img/37.jpg">
+    <h2 style="text-align: center;">Клей моментальный 1гр АВИОРА СЕКУНДА 403-205</h2>
+    <p style="text-align: center;">35 руб./шт</p>
+  </div>
+    <div class="product-item">
+    <img style="width: 120px;transform: translate(290%);" class="im" src="img/38.jpg">
+    <h2 style="text-align: center;">Клей-пена монтажная KNAUF PRO 0,85л</h2>
+    <p style="text-align: center;">705 руб./шт</p>
+  </div>
+    <div class="product-item">
+    <img class="im3 " src="img/39.jpg">
+    <h2 style="text-align: center; ">Очиститель монтажной пены ТЕХНОНИКОЛЬ MASTER 300гр</h2>
+    <p style="text-align: center;">152 руб./шт</p>
+  </div>
+    <div class="product-item">
+    <img style="width: 120px;transform: translate(290%);" class="im " src="img/40.jpg">
+    <h2 style="text-align: center;">Клей акриловый ADEFIX F белый 300мл</h2>
+    <p style="text-align: center;">200 руб./шт</p>
+  </div>
+    <div class="product-item">
+    <img style="width: 70px;transform: translate(550%);" class="im2 " src="img/41.jpg">
+    <h2 style="text-align: center;">Жидкие гвозди МОМЕНТ МОНТАЖ УНИВЕРСАЛ МР-40 бежевый 400гр</h2>
+    <p style="text-align: center;">441 руб./шт</p>
+  </div>
+
+</div>
+  
+</body>
+</html>
