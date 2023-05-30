@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Конструктив</title>
+  <style>
+  .kat
+  {
+  font-size: 20px;
+  border-style: 1px solid #000000;
+  border-width: 2px;
+  border-height: 30px; 
+  background-color: #66CCCC;
+  transform: translate(1em, 85em);
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(620px, 1fr));
+  grid-gap: 25px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  background-color: #66cccc;
+  box-shadow: 0 0 5px gray;
+  width: auto;
+  height: auto;
+}
+
+.product-item img {
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-item h2 {
+  margin-top: 0;
+}
+
+.product-item p {
+  margin: 0;
+}
+
+.product-item button {
+  margin-top: auto;
+}
+.im 
+{
+max-width: 300px;
+transform: translate(100%);
+}
+
+.im2 
+{
+max-width: 300px;
+transform: translate(90%);
+
+}
+.im3 
+{
+max-width: 150px;
+transform: translate(230%);
+
+}
+  </style>
+</head>
+<body style="background-color: #006666;">
+
+  <div>
+    <h1 style="text-align: center;font-size: 35px; color: #ccffff;"> Грунтовка </h1>
+  </div>
+    <div>
+      <button class="kat" id="button" onclick="document.location='new.html'">Назад</button>
+    </div>
+      <div class="product-grid">
+  <div class="product-item">
+    <img class="im2 " src="img/29.jpg">
+    <h2 style="text-align: center;">Грунтовка для внутренних/наружных работ CERESIT СТ-17 10л</h2>
+    <p style="text-align: center;">1063 руб./шт</p>
+  </div>
+  <div class="product-item">
+    <img class="im2 " src="img/30.jpg">
+    <h2 style="text-align: center;">Грунтовка для внутренних работ ОПТИМИСТ G101 10л</h2>
+    <p style="text-align: center;">750 руб./шт</p>
+  </div>
+    <div class="product-item">
+    <img class="im" src="img/31.jpg">
+    <h2 style="text-align: center;">Грунтовка для внутренних/наружных работ CERESIT СТ-17 5л</h2>
+    <p style="text-align: center;">585 руб./шт</p>
+  </div>
+    <div class="product-item">
+    <img class="im3 " src="img/32.jpg">
+    <h2 style="text-align: center; ">Грунтовка проникающая для внутренних работ ОПТИМИСТ G101 1л</h2>
+    <p style="text-align: center;">117 руб./шт</p>
+  </div>
+    <div class="product-item">
+    <img class="im " src="img/33.jpg">
+    <h2 style="text-align: center;">Грунтовка под декоративную штукатурку CERESIT СТ-16 10л</h2>
+    <p style="text-align: center;">1958 руб./шт</p>
+  </div>
+    <div class="product-item">
+    <img  class="im2 " src="img/34.jpg">
+    <h2 style="text-align: center;">Грунтовка для внутренних/наружных работ CERESIT Бетонконтакт СТ-19 15кг</h2>
+    <p style="text-align: center;">1800 руб./шт</p>
+  </div>
+
+</div>
+  
+</body>
+</html>
