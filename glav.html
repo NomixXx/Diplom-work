@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Конструктив</title>
+
+</head>
+<body style="background-color: #000000;">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+					<div class="ogl" id="oglav">
+  	<h1 style="text-align: center;color: #fff;">Главная Страница</h1>
+  		<p align="center" style="font-size: 25px;color: #fff;">Сайт пердназначен для ознакомления ассортимента предприятия Конструктив </p>
+  			<form method="dialog">
+  			</form>
+  				
+  					</div>
+   						<br>
+   						<div>
+   						<button class="tim" id="button" onclick="document.location='1/new.html'">Перейти в каталог</button>
+   						<button class="nas" id="button" onclick="document.location='1/nas.html'">О нас</button>
+   						<style>
+						.tim
+						{
+							font-size: 20px;
+							border-style: 1px solid #fff;
+							border-width: 2px;
+							border-height: 30px; 
+							background-color: #000;
+							transform: translate(43em, 4em);
+							border-color: #fff;
+							color: #fff;
+						}
+						.ogl
+						{
+							border-width: 2px;
+  							border-style: solid ;
+  							border-color: #fff;
+  							background-color: #000;
+  							border-left: 450px solid rgba(0, 0, 0, 0);
+							border-right: 450px solid rgba(0, 0, 0, 0);
+						}
+						.nas
+						{
+							font-size: 20px;
+							border-style: 1px solid #000000;
+							border-width: 2px;
+							border-height: 30px; 
+							background-color: #000;
+							transform: translate(81em, 19em);
+							border-color: #fff;
+							color: #fff;
+						}
+						#clock
+						{
+   						   font-size: 70px;
+    					  position: fixed;
+    					  top: 125px;
+    					  right: 825px;
+    					  color: #fff;
+    					  border-width: 2px;
+  						  border-style: solid ;
+  						  border-color: #fff;
+    					}
+					</div>			
+						</style>
+	<div id="clock"></div>
+	<script>
+    function updateClock() {
+      var now = new Date();
+      var hours = now.getHours();
+      var minutes = now.getMinutes();
+      var seconds = now.getSeconds();
+
+      // Добавляем ноль перед числами меньше 10 для красоты
+      if (hours < 10) {
+        hours = "0" + hours;
+      }
+      if (minutes < 10) {
+        minutes = "0" + minutes;
+      }
+      if (seconds < 10) {
+        seconds = "0" + seconds;
+      }
+      document.getElementById("clock").innerHTML = hours + ":" + minutes + ":" + seconds;
+    }
+    setInterval(updateClock, 1000);
+  </script>
+
+
+
+</body>
+</html>
